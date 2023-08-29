@@ -33,24 +33,30 @@ const config = {
     locales: ['en'],
   },
 
+  plugins: [
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'community',
+        path: 'community',
+        routeBasePath: 'community',
+        sidebarPath: require.resolve('./sidebarsCommunity.js'),
+      }),
+    ],
+  ],
+
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -74,7 +80,7 @@ const config = {
           {to: '/whitepaper', label: '白皮书', position: 'left'},
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'docsSidebar',
             position: 'left',
             label: '技术架构',
           },
@@ -83,6 +89,12 @@ const config = {
             href: 'https://github.com/cogine/realityworld',
             label: 'GitHub',
             position: 'right',
+          },
+          {
+            to: '/community/about-open-source',
+            label: '社区',
+            position: 'left',
+            activeBaseRegex: `/community/`,
           },
         ],
       },

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+displayed_sidebar: docsSidebar
 ---
 
 # Create a Blog Post
