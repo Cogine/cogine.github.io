@@ -4,32 +4,31 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: '架构体系',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        我们提出一套面向未来数字世界的架构体系和方法论，包括清晰的设计目标、原则以及核心技术实现。
+        它能够统一Web 3.0、元宇宙和大模型应用的一些底层技术逻辑，为未来的这些新型应用构建提供更清晰的开发思路。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '详细设计文档',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        针对架构设计提供一种可行的方案及详细的技术架构细节，包括怎样通过对软件架构、编程语言与编译器、复杂系、以及区块链、
+        元宇宙和大模型应用这些新型应用的特征分析形成这套架构体系的完整论证和思考过程。
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: '核心代码实现',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        包含一个简洁的源代码实现，其中包含了该套架构体系的核心机制。
       </>
     ),
   },

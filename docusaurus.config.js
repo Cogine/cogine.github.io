@@ -69,7 +69,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/reality_world_logo.jpg',
       navbar: {
         title: 'Reality World',
         logo: {
@@ -102,41 +102,45 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'RealityIS',
             items: [
               {
-                label: 'Tutorial',
+                label: '定义',
+                to: '/docs/intro',
+              },
+              {
+                label: '架构哲学',
+                to: '/docs/intro',
+              },
+              {
+                label: '常见问题',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: '社区',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: '知乎',
+                href: 'https://www.zhihu.com/people/thegibook',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'B站',
+                href: 'https://space.bilibili.com/343962235',
               },
             ],
           },
           {
-            title: 'More',
+            title: '联系',
             items: [
               {
-                label: 'Blog',
+                label: 'qinchunlin@realityworld.com',
                 to: '/blog',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: '微信：ARealityWorld',
+                to: '/blog',
               },
             ],
           },

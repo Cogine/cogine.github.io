@@ -99,8 +99,13 @@ html[data-theme='dark'] .topBannerTitleText {
 }
 
 .hero {
-  background-color: #2b3137;
+  background-color: #000000;
   padding: 48px;
+}
+
+.realityworldDescription {
+  color: #fff;
+  font-size: 16px;
 }
 
 .heroInner {
