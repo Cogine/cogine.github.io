@@ -1,4 +1,4 @@
-<h1 align="center">一种自我进化的、面向未来数字世界的软件架构方法</h1>
+<h1 align="center">一种自我进化的、可互操作性的分布式应用系统</h1>
 <br/>
 
 <p align="center">秦春林</p>
