@@ -3,6 +3,7 @@ slug: thinking
 title: 对未来数字世界和软件构造的思考
 authors: [chunlin]
 tags: [Reality World]
+hide_table_of_contents: false
 ---
 
 
