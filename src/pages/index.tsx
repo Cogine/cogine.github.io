@@ -81,7 +81,7 @@ function HeroBanner() {
               __html: translate({
                 id: 'homepage.hero.title',
                 message:
-                  'A <b>self-evolving</b> and <b>interoperable</b> system for future digital world',
+                  'A <b>self-evolving</b> and <b>interoperable</b> system towards digital intelligence',
                 description:
                   'Home page hero title, can contain simple html tags',
               }),
@@ -92,10 +92,10 @@ function HeroBanner() {
 <div data-theme="dark" className={styles.realityworldDescription}>Reality World是一个以互操作性为核心目标的分布式系统和架构，它的愿景是构造一个无边的数字世界，使得任何人都可以向这个系统动态创建新的子程序，这些子程序可以和其它子程序任意交互，这个系统可以像生物系统一样自我进化，从而通过复杂系统的机制涌现出更加智能、丰富和个性化的数字世界体验。</div>
 
         <div className={styles.indexCtas}>
-          <Link className="button button--primary" to="/whitepaper">
+          <Link className="button button--primary" to="/reality-world-paper">
             <Translate>Whitepaper</Translate>
           </Link>
-          <Link className="button button--primary" to="/docs/intro">
+          <Link className="button button--primary" to="/whitepaper">
             <Translate>Documentation</Translate>
           </Link>
           <span className={styles.indexCtasGitHubButtonWrapper}>
@@ -117,7 +117,7 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`A self-evolving and interoperable system for future digital world`}
+      title={`A self-evolving and interoperable system towards digital intelligence`}
       description="Description will go into a meta tag in <head />">
       <main>
         <TopBanner/>

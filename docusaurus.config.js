@@ -77,12 +77,13 @@ const config = {
           src: 'img/reality_world_logo.jpg',
         },
         items: [
-          {to: '/whitepaper', label: '白皮书', position: 'left'},
+          {to: '/reality-world-paper', label: '白皮书', position: 'left'},
+          {to: '/whitepaper', label: '技术架构', position: 'left'},
           {
             type: 'docSidebar',
             sidebarId: 'docsSidebar',
             position: 'left',
-            label: '技术架构',
+            label: '思考过程',
           },
           {to: '/blog', label: '博客', position: 'left'},
           {
