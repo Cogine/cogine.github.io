@@ -232,11 +232,11 @@ const Users: User[] = [
     tags: ['opensource'],
   },
   {
-    title: 'BoxyHQ',
+    title: 'Reality World',
     description: 'Enterprise Readiness made simple',
-    preview: require('./showcase/boxyhq.png'),
-    website: 'https://boxyhq.com/',
-    source: 'https://github.com/boxyhq/website',
+    preview: require('./showcase/realityworld.png'),
+    website: 'https://realityworld.com/',
+    source: 'https://github.com/realityworld/website',
     tags: ['opensource'],
   },
   {

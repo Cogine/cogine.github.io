@@ -1,38 +1,209 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+const copyright = '2023 © Reality World.';
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-
-/** @type {import('@docusaurus/types').Config} */
-const config = {
-  title: 'Reality World',
-  tagline: '一种自我进化的、面向未来数字世界的软件架构方法',
-  favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
-  url: 'https://cogine.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+/** @type {import('@docusaurus/types').DocusaurusConfig} */
+module.exports = {
+  title: 'Creating an intelligent reality with AI',
+  tagline:
+    "Reality World is a multi-agent platform built with interoperability as its core, in which a dynamic agent or program can be added and interoperated with all other agents. It's like a complex system and emerges digital intelligence.",
+  url: 'https://realityworld.com',
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
+  favicon: 'img/logo/reality-world.svg',
   organizationName: 'cogine', // Usually your GitHub org/user name.
-  projectName: 'cogine.github.io', // Usually your repo name.
+  projectName: 'RealityWorld', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+  scripts: [],
+  // stylesheets: ['styles/dark-mode.css'],
+  themeConfig: {
+    prism: {
+      theme: require('prism-react-renderer/themes/dracula'),
+      additionalLanguages: ['php'],
+    },
+    zoom: {
+      selector: '.markdown :not(em) > img',
+      config: {
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(50, 50, 50)',
+        },
+      },
+    },
+    announcementBar: {
+      id: 'announcement-bar',
+      content:
+        '<a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/Cogine/RealityWorld">⭐ We are going open source on GitHub</a>',
+      isCloseable: false,
+    },
+    image: 'img/website-preview-image.png',
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
+    navbar: {
+      title: 'Reality World',
+      logo: {
+        alt: 'Reality World',
+        width: '32px',
+        height: '32px',
+        src: 'img/logo/reality-world.svg',
+        srcDark: 'img/logo/reality-world.svg',
+      },
+      items: [
+        {
+          label: 'Products',
+          type: 'dropdown',
+          items: [
+            {
+              to: '/cogine',
+              label: 'Cogine',
+            },
+            {
+              to: '/reality-create',
+              label: 'Reality Create',
+            },
+            {
+              to: '/app',
+              label: 'Reality World',
+            },
+          ],
+        },
+        {
+          label: 'Developers',
+          type: 'dropdown',
+          items: [
+            { to: '/whitepaper', label: 'Whitepaper' },
+            { to: '/docs', label: 'Documentation' },
+            { to: '/thinking', label: 'Thinking' },
+          ],
+        },
+        {
+          to: '/blog',
+          label: 'Blog',
+        },
+        {
+          label: 'Community',
+          type: 'dropdown',
+          position: 'right',
+          items: [
+            {
+              to: '/careers',
+              label: 'Careers',
+            },
+            {
+              to: '/team',
+              label: 'Team',
+            },
+            {
+              to: '/pledge',
+              label: 'Pledge',
+            },
+          ],
+        },
+        {
+          href: 'https://github.com/Cogine/RealityWorld',
+          position: 'right',
+          className: 'header-github-link',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Cogine',
+          items: [
+            {
+              label: 'Introduction',
+              href: '/docs/introduction',
+            },
+            {
+              label: 'Architecture philosophy',
+              href: '/philosophy',
+            },
+            {
+              label: 'Questions',
+              href: '/questions',
+            },
+          ],
+        },
+        {
+          title: 'Social',
+          items: [
+            {
+              label: 'Wechat',
+              href: '/wechat',
+            },
+            {
+              label: 'Zhihu',
+              href: 'https://realityworld.com',
+            },
+            {
+              label: 'Bilibili',
+              href: 'https://realityworld.com',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Github',
+              href: 'https://github.com/Cogine/RealityWorld',
+            },
+            {
+              label: 'License',
+              href: '/terms.html',
+              target: '_blank',
+            },
+          ],
+        },
+        {
+          title: 'About',
+          items: [
+            {
+              label: 'Reality World',
+              href: '/careers',
+            },
+            {
+              label: 'Team',
+              href: '/team',
+            },
+          ],
+        },
+      ],
+      copyright,
+    },
   },
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js'),
+        },
+        blog: {
+          blogTitle: 'Blog',
+          blogDescription:
+            'The Reality World blog is where our team shares our thoughts and ideas about everything from our products to industry news and insights. We also welcome guest posts so please do get in touch if you have any thoughts you would like to share on our blog.',
+          showReadingTime: true,
+          feedOptions: {
+            type: 'all',
+            copyright,
+          },
 
+          blogSidebarTitle: 'Recent posts',
+          blogSidebarCount: 5,
+          postsPerPage: 'ALL',
+        },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+      },
+    ],
+  ],
   plugins: [
     [
       'content-docs',
@@ -44,115 +215,47 @@ const config = {
         sidebarPath: require.resolve('./sidebarsCommunity.js'),
       }),
     ],
-  ],
-
-  presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          path: 'docs',
-          sidebarPath: require.resolve('./sidebars.js'),
-        },
-        blog: {
-          showReadingTime: true,
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      }),
+      '@docusaurus/plugin-content-blog',
+      {
+        /**
+         * Required for any multi-instance plugin
+         */
+        id: 'careers',
+        /**
+         * URL route for the blog section of your site.
+         * *DO NOT* include a trailing slash.
+         */
+        routeBasePath: 'careers',
+        /**
+         * Path to data on filesystem relative to site dir.
+         */
+        path: './careers',
+        blogTitle: 'Careers',
+        blogDescription:
+          'Join us on our mission to help startups simplify the development of compliance and data security-related features in their products. Check out our open roles.',
+      },
     ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        /**
+         * Required for any multi-instance plugin
+         */
+        id: 'success-stories',
+        /**
+         * URL route for the blog section of your site.
+         * *DO NOT* include a trailing slash.
+         */
+        routeBasePath: 'success-stories',
+        /**
+         * Path to data on filesystem relative to site dir.
+         */
+        path: './success-stories',
+        blogTitle: 'Success Stories',
+        blogDescription: '',
+      },
+    ],
+    ['@cmfcmf/docusaurus-search-local', {}],
   ],
-
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: 'img/reality_world_logo.jpg',
-      navbar: {
-        title: 'Reality World',
-        logo: {
-          alt: 'Reality World Logo',
-          src: 'img/reality_world_logo.jpg',
-        },
-        items: [
-          {to: '/reality-world-paper', label: '白皮书', position: 'left'},
-          {to: '/whitepaper', label: '技术架构', position: 'left'},
-          {
-            type: 'docSidebar',
-            sidebarId: 'docsSidebar',
-            position: 'left',
-            label: '思考过程',
-          },
-          {to: '/blog', label: '博客', position: 'left'},
-          {
-            href: 'https://github.com/cogine/realityworld',
-            label: 'GitHub',
-            position: 'right',
-          },
-          {
-            to: '/community/about-open-source',
-            label: '社区',
-            position: 'left',
-            activeBaseRegex: `/community/`,
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'RealityIS',
-            items: [
-              {
-                label: '定义',
-                to: '/docs/intro',
-              },
-              {
-                label: '架构哲学',
-                to: '/docs/intro',
-              },
-              {
-                label: '常见问题',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: '社区',
-            items: [
-              {
-                label: '知乎',
-                href: 'https://www.zhihu.com/people/thegibook',
-              },
-              {
-                label: 'B站',
-                href: 'https://space.bilibili.com/343962235',
-              },
-            ],
-          },
-          {
-            title: '联系',
-            items: [
-              {
-                label: 'qinchunlin@realityworld.com',
-                to: '/blog',
-              },
-              {
-                label: '微信：ARealityWorld',
-                to: '/blog',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()}. Powered by Reality World.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
 };
-
-module.exports = config;

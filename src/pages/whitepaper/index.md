@@ -648,9 +648,13 @@ John E Mayfield的主要研究方向是关于进化的一般性理论，他指�
 
 针对自我进化，我们从复杂系统的理论中得到启示，其核心的思想是自治能力，即子系统可以在不经过中央或者全局控制的情况下实现局部子系统之间的交互，因为这种交互不光带来安全隐患，还使得子系统可能会受限于中央控制器而不容易去单独扩展能力，而这是进化系统的基础。为了解决这个我们，我们从游戏开发界最新的ECS架构得到启示，并结合我们的动态类型系统，实现一个基于类型的局部自治架构，在这样的架构中，子系统只需要声明关注的数据类型，即可以定义与其它子系统之间的交互关系。围绕这些机制，我们还进一步分析了整个系统的进化过程，它遵循生物或自然界中复杂系统进化相似的原理或过程。我们称这部分结构为内在结构，它决定着一个子系统内部怎样去演进和进化。
 
+在内部结构和外部结构之外的系统中，用户则牢牢掌握着所有的数据权限，并通过数据权限控制着整个程序的运行，包括一个子系统是否可以访问用户的某些数据，以及一个子系统是否可以与其它子系统进行交互，甚至一个子系统即使已经被用户安装到用户的应用环境，它仍然可以通过数据被完全禁止运行。用户对数据的权限被牢牢地集成到系统的虚拟机中，
+
 <br/>
 
 ## RealityIS系统架构
+
+
 
 对互操作性的改进：
 
@@ -685,7 +689,160 @@ John E Mayfield的主要研究方向是关于进化的一般性理论，他指�
 
 ### 非中心化的系统交互
 
+
+
+### 虚拟机
+
+#### 字节码
+
+本质上结构跟Wasm相似，可以做到很底层，都是函数级的数据，只是函数调转的机制不一样。
+
+```json
+{
+    "magic": "0",
+    "version": "1.0.0", // VM的版本号，类型的解释方法一般不变
+    "inputs": [         // 内部Standard格式可能存在和用户版本不兼容，运行时检查
+    	{
+           	"User":{
+        		"version": "1.0.0",
+        		"name": "String"，
+        		"age": "int"
+        	}
+		}
+    ],
+	"standards":[
+        "Car":{
+        	
+        }
+    ]
+    "components": [
+        {
+            "name":"add_com",
+            "inputs":[
+                "User"
+            ]
+            "output":[]
+        }
+    ],   // 内部方法
+    "outputs": [],      // 可能存在版本不兼容
+    "codes"" []         // 将所有代码放在一起，Component还有其它参数信息影响缓存连贯性
+}
+```
+
+#### inputs
+
+将属性定义都拷贝进Agent内部，一是方便Agent编辑，同时考虑到后面Component的参数签名是跟Standard的属性名字绑定的，并没有像传统编译器那样编译为地址，例如：
+
+```json
+{
+    "inputs":[
+        "User":{
+        	"version": "1.0.0",
+        	"name": "String"，
+        	"age": "int"
+        }
+    ]
+}
+```
+
+但是运行时检查到版本不一致时，自动做一些转化。
+
+##### Standard版本兼容
+
+为了避免不断的更新，实行两个策略：
+
+- 小版本必须兼容
+- 大版本必须更新Agent，否则不让运行
+
+###### 小版本兼容
+
+- 修改字段名字
+
+###### 大版本更新
+
+- 增加字段
+- 删除字段
+- 修改字段类型 = 删除字段 + 增加字段
+
+#### Lua与宿主交互
+
+类型解耦，
+
+Python没有Lua那样的动态类型，先支持Lua
+
 ## RealityIS技术特征
+
+
+
+### 执行流程
+
+传统几种模式：
+
+#### 函数调用关系
+
+实际上是转化为程序的传统结构
+
+- 需要管理函数实例及其地址
+- 需要关系参数的链接
+
+#### 流程顺序
+
+Hodini的方式
+
+- 不用管理函数实例
+- 按类型名字进行获取数据
+
+#### ShadeGraph
+
+- 管理依赖关系
+- 依赖关系由变量名称确定，即是类型的实例，即是参数的连接，只不过定义了全局参数，而不是从函数的输入输入去连
+
+变量名字不易于复用
+
+```c++
+// Create the graph - it starts out empty
+cudaGraphCreate(&graph, 0);
+
+// For the purpose of this example, we'll create
+// the nodes separately from the dependencies to
+// demonstrate that it can be done in two stages.
+// Note that dependencies can also be specified
+// at node creation.
+cudaGraphAddKernelNode(&a, graph, NULL, 0, &nodeParams);
+cudaGraphAddKernelNode(&b, graph, NULL, 0, &nodeParams);
+cudaGraphAddKernelNode(&c, graph, NULL, 0, &nodeParams);
+cudaGraphAddKernelNode(&d, graph, NULL, 0, &nodeParams);
+
+// Now set up dependencies on each node
+cudaGraphAddDependencies(graph, &a, &b, 1);     // A->B
+cudaGraphAddDependencies(graph, &a, &c, 1);     // A->C
+cudaGraphAddDependencies(graph, &b, &d, 1);     // B->D
+cudaGraphAddDependencies(graph, &c, &d, 1);     // C->D
+```
+
+> 到目前为止**cuda graph**的依赖需要用户手动设置。当kernel或其他操作输入变量变化时，**cuda graph**需要用户手动更新节点参数。
+>
+> 当我们面对大量节点与输入参数时，手动来构造**cuda graph**和更新节点就不太现实，于是**muda**自动计算图就应运而生了。
+
+> 在1）部分我们定义了**graph var**，这些**graph var**在**muda** **compute graph**中只表示一种虚拟资源（**muda compute graph** 默认所有的虚拟资源相互之间不产生重叠，即内存不发生overlap）。一般我们会要求图的输入变量为一个viewer（他本身不拥有资源，只是一个资源的访问器，是trivially copyable的），或是一个值类型。如果你知道你在干什么，那么你也可以使用奇技淫巧。
+
+在2）部分，我们定义了**graph nodes**。注意，**graph nodes**的定义顺序会影响**graph nodes**的依赖关系，**graph nodes**的定义顺序应该是所有任务的逻辑顺序，这非常的intuitive！我们的所有串行代码都是这么写的。
+
+
+
+#### Cogine
+
+从上述的方案中总结：
+
+- 要想简化，都需要全局数据，不管是Houdini中的几何数据，还是ShaderGraph中由变量名字确定的全局数据，这样避免牵涉对函数细节的了解
+- 流程比实际的函数调用更简单，如Houdini和ShaderGraph
+- 用户理解流程很重要，相比由输入输出来确定参数不太利于管理和控制，比如你要修改流程就必须去修改变量名字；相同的流程在一个系统中多次执行则要定义不同语义的变量名字
+
+
+
+像ShaderGraph通常是固定的流程，没有Control FLow，即每个流程都会被执行，并且通常能被计算出一个线性的执行顺序使其可以保证其中定义的依赖关系。
+
+
 
 ### 互操作性
 
@@ -715,6 +872,12 @@ John E Mayfield的主要研究方向是关于进化的一般性理论，他指�
 
 #### 动态类型带来的性能问题
 
+改进语言虚拟机，去掉函数栈等控制的机制，仅保留代码执行
+
+编译为像WASM的字节码，WASM本身就是按函数级定义的，其实我们的机制正是对应这种，只不过函数换成我们的组件
+
+
+
 #### 程序的持续运行模式
 
 #### 对涌现能力的预测
@@ -728,6 +891,10 @@ John E Mayfield的主要研究方向是关于进化的一般性理论，他指�
 ### 用户体验挑战
 
 #### 用户从功能管理到数据管理
+
+启示这已经比较普遍，只是管控的是API，但是API代表的就是一种数据的获取，
+
+![phone-setting](images\phone-setting.jpg)
 
 #### 应用由主动执行到被动持续执行
 
@@ -756,6 +923,8 @@ John E Mayfield的主要研究方向是关于进化的一般性理论，他指�
  ### 驱动软件架构创新
 
 ### 驱动数字形态创新
+
+### 驱动操作系统创新
 
 ## 总结
 
