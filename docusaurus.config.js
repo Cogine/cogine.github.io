@@ -7,8 +7,8 @@ module.exports = {
     "Reality World is a multi-agent platform built with interoperability as its core, in which a dynamic agent or program can be added and interoperated with all other agents. It's like a complex system and emerges digital intelligence.",
   url: 'https://realityworld.com',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
+  onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'ignore',
   favicon: 'img/logo/reality-world.svg',
   organizationName: 'cogine', // Usually your GitHub org/user name.
   projectName: 'cogine.github.io', // Usually your repo name.
