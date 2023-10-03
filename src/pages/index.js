@@ -84,7 +84,7 @@ const IndexPage = () => {
 
         </p>
         <p>
-          In a LLM-powered application, the inputs of a function is semantic instead of structured data, which brings uncertainty and needs conversational way to get more information. For solve this problem, we propose a new concept and a novel architecture called "Conversational computing" for the first time in the world, to make any function can be paused and conversational commnuicating with user, system and other agents to get full information it needs with extra works.
+          In a LLM-powered application, the inputs of a function is semantic instead of structured data, which brings uncertainty and needs conversational way to get more information. For solve this problem, we propose a new concept and a novel architecture called "Conversational computing" for the first time in the world, to make any function can be paused and conversational commnuicating with user, system and other agents to get full information it needs without extra works.
 
         </p>
       </FeatureSection>
