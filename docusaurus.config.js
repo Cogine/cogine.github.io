@@ -17,7 +17,7 @@ module.exports = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
-    
+  },
   scripts: [],
   // stylesheets: ['styles/dark-mode.css'],
   themeConfig: {
