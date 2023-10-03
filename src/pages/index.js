@@ -7,7 +7,6 @@ import FeatureSection from '../components/FeatureSection';
 import FeatureSectionImage from '../components/FeatureSectionImage';
 import SectionLayout from '../components/SectionLayout';
 
-const Icon3 = require('../../static/img/home-buildingblocks.svg').default;
 const Collaboration = require('../../static/img/home/collaberation.svg').default;
 const Platform = require('../../static/img/home/platform.svg').default;
 const Conversational = require('../../static/img/home/conversational.svg').default;
