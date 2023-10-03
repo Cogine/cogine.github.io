@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SectionLayout = ({ title, description, children, style, titleStyle }) => {
+const SectionLayout = ({ title, description, children, style, titleStyle ,descriptionStyle}) => {
   return (
     <section className="page__section" style={style}>
       <div className="container">
@@ -11,7 +11,7 @@ const SectionLayout = ({ title, description, children, style, titleStyle }) => {
           {title}
         </h2>
         {description && (
-          <p className="text--center" style={{ whiteSpace: 'pre-wrap' }}>
+          <p className="text--center" style={{ whiteSpace: 'pre-wrap' ,...descriptionStyle}}>
             {description}
           </p>
         )}

@@ -4,12 +4,13 @@ import HeroSection from '../components/HeroSection';
 import CustomersSection from '../components/CustomersSection';
 import DeveloperCommunitySection from '../components/DeveloperCommunitySection';
 import FeatureSection from '../components/FeatureSection';
+import FeatureSectionImage from '../components/FeatureSectionImage';
 import SectionLayout from '../components/SectionLayout';
 
 const Icon3 = require('../../static/img/home-buildingblocks.svg').default;
-const Flow = require('../../static/img/home/flow.png').default;
-const Format = require('../../static/img/home/format.png').default;
-const Platform = require('../../static/img/home/platform.png').default;
+const Collaboration = require('../../static/img/home/collaberation.svg').default;
+const Platform = require('../../static/img/home/platform.svg').default;
+const Conversational = require('../../static/img/home/conversational.svg').default;
 
 const title = 'Reality World';
 const description = 'Creating an intelligent reality with AI';
@@ -37,135 +38,76 @@ const IndexPage = () => {
 
       <CustomersSection />
 
-      <FeatureSection
+      <FeatureSectionImage
         title="Let everyone can write AI agent"
         btnLink="https://realityworld.com"
         btnText="Read More"
-        image={Icon3}
+        image='/img/home/flow.png'
+        imgWidth='600px'
+        imgHeight='333px'
         direction="right"
       >
         <p>
-          We have curated a list of awesome open-source developer security
-          tools.
+          Programming is not easy, but the hardest part is not the programming language itself, its the program structure organizing. We build a high level logic-abstraction to hide the structure and let developer focused on logic only.
         </p>
-        <p>
-          It includes security principles and controls relevant to popular
-          compliance certifications (like ISO27001, SOC2, MVSP, etc.)
+        <p>Most visual graph editting is just a visual wrapper of the original codes. We build a graph interaction which is as simple as Houdini and as powerful as any turning completed programming language.
         </p>
-      </FeatureSection>
+      </FeatureSectionImage>
 
       <FeatureSection
-        title="An agent format standard"
+        title="An agent platform & VM"
         btnLink="https://realityworld.com"
         btnText="Read More"
-        image={Icon3}
+        image={Platform}
         direction="left"
       >
         <p>
-          We have curated a list of awesome open-source developer security
-          tools.
+          We defined a standard agent format to represent a turing completed agent program which can be loaded and runned dynamically so everyone can develop an agent to handle personal needs.
+
         </p>
         <p>
-          It includes security principles and controls relevant to popular
-          compliance certifications (like ISO27001, SOC2, MVSP, etc.)
+          We then build a platform with a virtual machine to interpret and execute the above agent format program dynamically. By this dynamical capability, developer can create and share agent with users as simple as share a url.
+
         </p>
       </FeatureSection>
 
       <FeatureSection
-        title="A platform & VM to run agent from anyone"
+        title="Multi-agent conversational collaborating framework"
         btnLink="https://realityworld.com"
+        imgWidth='600px'
+        imgHeight='auto'
         btnText="Read More"
-        image={Icon3}
+        image={Conversational}
         direction="right"
       >
         <p>
-          We have curated a list of awesome open-source developer security
-          tools.
+          Agents can commnuicating with user, system and other agents in a very simple way which provides the ability to finish a task in a collaberating way.
+
         </p>
         <p>
-          It includes security principles and controls relevant to popular
-          compliance certifications (like ISO27001, SOC2, MVSP, etc.)
+          In a LLM-powered application, the inputs of a function is semantic instead of structured data, which brings uncertainty and needs conversational way to get more information. For solve this problem, we propose a new concept and a novel architecture called "Conversational computing" for the first time in the world, to make any function can be paused and conversational commnuicating with user, system and other agents to get full information it needs with extra works.
+
         </p>
       </FeatureSection>
 
-      <FeatureSection
-        title="Agent can interoperate with anyone self"
+      <FeatureSectionImage
+        title="An engine of complexity to emerge intelligence"
         btnLink="https://realityworld.com"
         btnText="Read More"
-        image={Icon3}
+        imgWidth='600px'
+        imgHeight='auto'
+        image='/img/home/complex.jpg'
         direction="left"
       >
         <p>
-          We have curated a list of awesome open-source developer security
-          tools.
-        </p>
-        <p>
-          It includes security principles and controls relevant to popular
-          compliance certifications (like ISO27001, SOC2, MVSP, etc.)
-        </p>
-      </FeatureSection>
+          In biology or social economic syetm, many agreements have come to that the intelligence of the system come from the emergence mechanism of the complex system theory.
 
-      <FeatureSection
-        title="Conversational computing"
-        btnLink="https://realityworld.com"
-        btnText="Read More"
-        image={Icon3}
-        direction="right"
-      >
-        <p>
-          We have curated a list of awesome open-source developer security
-          tools.
         </p>
         <p>
-          It includes security principles and controls relevant to popular
-          compliance certifications (like ISO27001, SOC2, MVSP, etc.)
+          In computer science and engineering, applications are isolated each other for data security and some other business reasons. The lack of interoperability make the applications non-cooperative and hence none-intelligent. We re-organized the structure and execution of software contruction process to provide a interopability-native architecture to form an engine of complexity.
         </p>
-      </FeatureSection>
+      </FeatureSectionImage>
 
-      <SectionLayout title="Key Features and Benefits" description="">
-        <div className="row">
-          <div className="col col--8 col--offset-2">
-            <div className="col-demo center">
-              <div>
-                <ul>
-                  <li>
-                    <b>Reduce time to market:</b> Build and ship
-                    enterprise-grade products
-                  </li>
-                  <li>
-                    <b>Cost Savings:</b> Save money optimizing development costs
-                  </li>
-                  <li>
-                    <b>Develop secure applications:</b> Our APIs integrate
-                    security best practices into your development process
-                  </li>
-                  <li>
-                    <b>Enhanced Efficiency:</b> With an intuitive interface and
-                    powerful features, businesses can automate tasks, optimize
-                    workflows, and maximize efficiency
-                  </li>
-                  <li>
-                    <b>Full Support:</b> BoxyHQ is committed to providing
-                    exceptional support to its customers, ensuring a smooth
-                    onboarding process and continued assistance throughout their
-                    journey
-                  </li>
-                  <li>
-                    <b>Advanced Security:</b> BoxyHQ prioritizes data security,
-                    employing robust measures to safeguard sensitive information
-                    and ensure peace of mind
-                  </li>
-                  <li>
-                    <b>Seamless Integrations:</b> Integrate with the most
-                    popular SSO providers such as Okta, Microsoft Entra ID,
-                    Auth0, Google and more
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </SectionLayout>
 
       <DeveloperCommunitySection />
     </Layout>

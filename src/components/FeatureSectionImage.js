@@ -3,7 +3,7 @@ import Link from '@docusaurus/Link';
 
 import SvgIcon from './SvgIcon';
 
-const FeatureSection = ({
+const FeatureSectionImage = ({
   title,
   image,
   imgWidth,
@@ -54,10 +54,7 @@ const FeatureSection = ({
                   height: '350px',
                 }}
               >
-                <SvgIcon
-                  icon={image}
-                  size={{ width: imgWidth, height: imgHeight }}
-                />
+                <img src={image} style={{ height: imgHeight, width: imgWidth }} />
               </div>
             </div>
           </div>
@@ -67,4 +64,4 @@ const FeatureSection = ({
   );
 };
 
-export default FeatureSection;
+export default FeatureSectionImage;

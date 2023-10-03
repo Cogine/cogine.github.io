@@ -23,12 +23,6 @@ const DeveloperCommunitySection = () => {
         >
           Star on GitHub
         </Link>
-        <Link
-          href="https://discord.https://realityworld.com/"
-          className="button button--primary button--outline"
-        >
-          Join Discord
-        </Link>
       </div>
     </SectionLayout>
   );

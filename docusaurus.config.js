@@ -11,7 +11,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'throw',
   favicon: 'img/logo/reality-world.svg',
   organizationName: 'cogine', // Usually your GitHub org/user name.
-  projectName: 'RealityWorld', // Usually your repo name.
+  projectName: 'cogine.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
   scripts: [],
@@ -89,16 +89,20 @@ module.exports = {
           position: 'right',
           items: [
             {
-              to: '/careers',
-              label: 'Careers',
+              to: '/community/about-open-source',
+              label: 'About open source',
             },
             {
-              to: '/team',
-              label: 'Team',
+              to: '/community/about-reality-world',
+              label: 'About Reality World',
             },
             {
-              to: '/pledge',
-              label: 'Pledge',
+              to: '/community/contact',
+              label: 'Contact',
+            },
+            {
+              to: '/community/questions',
+              label: 'Questions',
             },
           ],
         },
@@ -155,7 +159,7 @@ module.exports = {
             },
             {
               label: 'License',
-              href: '/terms.html',
+              href: '/',
               target: '_blank',
             },
           ],
