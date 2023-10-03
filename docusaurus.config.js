@@ -14,6 +14,10 @@ module.exports = {
   projectName: 'cogine.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+    
   scripts: [],
   // stylesheets: ['styles/dark-mode.css'],
   themeConfig: {
