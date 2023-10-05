@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrealityworld=self.webpackChunkrealityworld||[]).push([[625],{6769:e=>{e.exports=JSON.parse('{"label":"Cogine","permalink":"/blog/tags/cogine","allTagsPath":"/blog/tags","count":1}')}}]);

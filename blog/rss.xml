@@ -4,11 +4,21 @@
         <title>Creating an intelligent reality with AI Blog</title>
         <link>https://realityworld.com/blog</link>
         <description>Creating an intelligent reality with AI Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 04 Oct 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>2023 © Reality World.</copyright>
+        <item>
+            <title><![CDATA[Conversational computing: a new programming model empower LLM applications]]></title>
+            <link>https://realityworld.com/blog/conversational-computing</link>
+            <guid>https://realityworld.com/blog/conversational-computing</guid>
+            <pubDate>Wed, 04 Oct 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Citation]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="citation">Citation<a href="#citation" class="hash-link" aria-label="Direct link to Citation" title="Direct link to Citation">​</a></h2><p>Cited as:</p><blockquote><p>Qin, Chunlin. (Oct 2023). Conversational computing: a new programming model empower LLM applications. Reality World. <a href="https://realityworld.com/blog/conversational-computing" target="_blank" rel="noopener noreferrer">https://realityworld.com/blog/conversational-computing</a>.</p></blockquote><p>Or</p><div class="language-latex codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-latex codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">@article{qin2023conversational,</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  title   = "Conversational computing: a new programming model empower LLM applications",</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  author  = "Qin, Chunlin",</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  journal = "Reality World",</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  year    = "2023",</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  month   = "Oct",</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  url     = "https://realityworld.com/blog/conversational-computing"</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="references">References<a href="#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h2>]]></content:encoded>
+            <category>Reality World</category>
+            <category>Cogine</category>
+        </item>
         <item>
             <title><![CDATA[对未来数字世界和软件构造的思考]]></title>
             <link>https://realityworld.com/blog/thinking</link>
