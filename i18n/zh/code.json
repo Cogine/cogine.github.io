@@ -292,5 +292,80 @@
   "theme.tags.tagsPageTitle": {
     "message": "标签",
     "description": "The title of the tag list page"
+  },
+  "Read More": {
+    "message": "阅读更多"
+  },
+  "Rality World is a multi-agent platform built with interoperability as its core, in which a dynamic agent or program can be added and interoperated with all other agents. It's like a complex system and emerges digital intelligence.": {
+    "message": "Rality World是一个多程序（如多智能体）动态运行的平台和模拟器， 它的核心是解决这些来自不同开发者的程序之间的互操作、安全和调度。它像复杂系统一样工作，用户可以选择不同的程序组合，使得整体程序相比传统程序能够涌现出数字智能。"
+  },
+  "Get Started": {
+    "message": "开始入门"
+  },
+  "Let everyone can write AI agent": {
+    "message": "让每个人都可以编写AI智能体程序"
+  },
+  "Programming is not easy, but the hardest part is not the programming language itself, its the program structure organizing. We build a high level logic-abstraction to hide the structure and let developer focused on logic only.": {
+    "message": "编写程序并不简单，但是其中最难的部分并不是编程语言本身，而是关于大规模程序怎样组织的方法，也即程序的结构，我们通过建立一个更高层次的逻辑抽象层来隐藏这种程序结构性，使开发者仅需要将注意力放到业务流程上。"
+  },
+  "Most visual graph editting is just a visual wrapper of the original codes. We build a graph interaction which is as simple as Houdini and as powerful as any turning completed programming language.": {
+    "message": "大部分基于Graph的可视程序编辑只是对原始程序代码的一种可视化，这意味着开发者仍然需要关注结构性，基于我们调整的程序结构，我们构建出一种像Houdini一样简单的可视逻辑编辑交互，同时又和其它任何图灵完备的编程语言一样具有灵活的表达能力。"
+  },
+  "An agent VM, platform and simulator": {
+    "message": "一个子程序的虚拟机、平台和模拟器"
+  },
+  "We then build a platform with a virtual machine to interpret and execute the above agent format program dynamically. By this dynamical capability, developer can create and share agent with users as simple as share a url.": {
+    "message": "基于这种标准格式，我们开发了一个虚拟机用于动态解释和执行这种程序，这种动态性使得任何个人都可以开发和分享自己的个性化程序，就像分享一个URL那么简单，这将大大简化程序的创建和发布流程。"
+  },
+  "Multi-agent conversational collaborating framework": {
+    "message": "多程序对话式协作框架"
+  },
+  "Agents can commnuicating with user, system and other agents in a very simple way which provides the ability to finish a task in a collaberating way.": {
+    "message": "任何微程序可以以非常简单的方式与用户、系统和其它微程序进行通信，这提供一种能力通过使得程序之间通过协作的方式来完成复杂的任务。"
+  },
+  "In a LLM-powered application, the inputs of a function is semantic instead of structured data, which brings uncertainty and needs conversational way to get more information. For solve this problem, we propose a new concept and a novel architecture called \"Conversational computing\" for the first time in the world, to make any function can be paused and conversational commnuicating with user, system and other agents to get full information it needs without extra works.": {
+    "message": "基于大模型（LLM）的应用，一个函数的输入是语义化的文本而不是结构化的数据，这给程序带来了很多不确定性，这需要通过多轮对话来澄清更多信息。为了解决这个问题，我们首次提出一种称为对话式计算（Conversational Computing）的概念和技术，使得任何函数都可以任意被暂停以与用户、系统或者其它微程序进行对话以获取更多信息，并在条件满足之后自动恢复执行，整个过程就像编写传统串行程序一样简单，不需要做一些额外繁琐的工作。"
+  },
+  "An engine of complexity to emerge intelligence": {
+    "message": "基于复杂系统理论构建的复杂引擎"
+  },
+  "In biology or social economic syetm, many agreements have come to that the intelligence of the system come from the emergence mechanism of the complex system theory.": {
+    "message": "在生物和社会经济系统中，人们普遍的共识是整个系统的智能来源于复杂系统理论中的涌现机制，这种涌现机制通过独立组件之间的局部协作、复制变异以及选择来实现。"
+  },
+  "In computer science and engineering, applications are isolated each other for data security and some other business reasons. The lack of interoperability make the applications non-cooperative and hence none-intelligent. We re-organized the structure and execution of software contruction process to provide a interopability-native architecture to form an engine of complexity.": {
+    "message": "在计算机科学和工程中，应用之间通常是相互隔离以保证数据安全，这种互操作能力的缺失使得应用之间以非协作的方式运行，从而缺乏智能。我们通过对程序的结构和运行过程进行重新组织以提供一个原生互操作的计算架构，使整个系统像一个复杂引擎。"
+  },
+  "Conversational": {
+    "message": "对话式计算"
+  },
+  "Code can talk to user, system or other agents to ask more information at any function location, the agent will be paused and continue to run when got response.": {
+    "message": "每个函数可以任意跟用户、系统或其它程序进行任意通信以获取更多信息，该程序会被系统暂停直到获得响应后自动恢复执行，这种计算模型对LLM应用非常重要。"
+  },
+  "Interoperability": {
+    "message": "互操作性"
+  },
+  "Agents written by different developers could be running in a same memory environment and interoperate with each other with the permission of user.": {
+    "message": "来自不同开发者之间编写的程序可以运行在同一个内存环境，并在用户的许可下进行互操作，这种应用之间的协作能力是未来元宇宙和AI多智能体应用的核心基础需求。"
+  },
+  "Self-evolving": {
+    "message": "自我进化"
+  },
+  "The agents are working in a collaborated way and user could custimize it's personal composation to make the whole system self-evolving and emerge digital intelligence.": {
+    "message": "所有程序以相互协作的方式进行工作，用户可以定制个性化的组合以满足不同的个性需求，像生物系统一样进行自我进化，通过复杂系统的机制涌现出更高的数字智能。"
+  },
+  "Logic-abstraction": {
+    "message": "逻辑抽象"
+  },
+  "We re-organized the whole program to make developers focused on logic of busniess and forget about the hardware, data and programing language abstraction.": {
+    "message": "运行时将对整个程序进行重新组织，这使得开发者仅需要关注逻辑，而不需要关心硬件、内存数据管理以及其它编程语言相关的细节，从而建立一种逻辑抽象。"
+  },
+  "Computing Innovation": {
+    "message": "计算架构创新"
+  },
+  "We defined a agent format standard to represent a turing completed agent program which can be loaded and runned dynamically so everyone can develop an agent to handle personal needs.": {
+    "message": "我们定义了一个微程序（如AI智能体）的标准格式，它是图灵完备的程序，这个程序可以被动态加载和运行。"
+  },
+  "Join our developer community": {
+    "message": "加入开发者社区"
   }
 }

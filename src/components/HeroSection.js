@@ -36,55 +36,50 @@ const HeroSection = ({
           <div
             style={{
               display: 'flex',
-              flexWrap: 'nowrap',
               alignItems: 'center',
               justifyContent: 'center',
+              height: '100px',
             }}
           >
-            {Icon && <Icon style={{ width: '40px', height: '90px' }} />}
             <h1 className="hero__title">{title}</h1>
           </div>
-          <div
-            style={{
-              display: 'flex',
-              flexWrap: 'nowrap',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-          <p className='hero__subtitle'>
-            Reality World is a multi-agent platform built with interoperability as its core,<br />in which a dynamic agent or program can be added and interoperated with all other agents. <br />It's like a complex system and emerges digital intelligence.    
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}>
+            <p className='hero__subtitle' style={{ width: '600px', height: '90px' }}>
+              {description}
             </p>
           </div>
           <div
             style={{
               display: 'flex',
-              flexWrap: 'nowrap',
               alignItems: 'center',
               justifyContent: 'center',
             }}
           >
-          <div className="intro__buttons margin-top--lg text--center">
-            {buttons.map(({ href, title, className, onClick }, idx) =>
-              onClick ? (
-                <a
-                  onClick={onClick}
-                  className={clsx('button button--lg', className)}
-                >
-                  {title}
-                </a>
-              ) : (
-                <Link
-                  className={clsx('button button--lg', className)}
-                  href={href}
-                  key={idx}
-                >
-                  {title}
-                </Link>
-              )
-            )}
+            <div className="intro__buttons margin-top--lg text--center">
+              {buttons.map(({ href, title, className, onClick }, idx) =>
+                onClick ? (
+                  <a
+                    onClick={onClick}
+                    className={clsx('button button--lg', className)}
+                  >
+                    {title}
+                  </a>
+                ) : (
+                  <Link
+                    className={clsx('button button--lg', className)}
+                    href={href}
+                    key={idx}
+                  >
+                    {title}
+                  </Link>
+                )
+              )}
 
-          </div>
+            </div>
 
           </div>
         </div>

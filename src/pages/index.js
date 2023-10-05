@@ -17,11 +17,12 @@ const title = 'Reality World';
 const description = 'Creating an intelligent reality with AI';
 
 const IndexPage = () => {
+  const more = <Translate>Read More</Translate>
   return (
     <Layout title={title} description={description}>
       <HeroSection
         title="Creating an intelligent reality with AI"
-        description=""
+        description=<Translate>Rality World is a multi-agent platform built with interoperability as its core, in which a dynamic agent or program can be added and interoperated with all other agents. It's like a complex system and emerges digital intelligence.</Translate>
         image="/img/home-hero.svg"
         buttons={[
           {
@@ -30,7 +31,7 @@ const IndexPage = () => {
             className: 'button--primary',
           },
           {
-            title: 'Get Started',
+            title: <Translate>Get Started</Translate>,
             href: '',
             className: 'button--primary button--outline',
           },
@@ -40,72 +41,72 @@ const IndexPage = () => {
       <CustomersSection />
 
       <FeatureSectionImage
-        title="Let everyone can write AI agent"
+        title=<Translate>Let everyone can write AI agent</Translate>
         btnLink="https://realityworld.com"
-        btnText="Read More"
+        btnText={more}
         image="/img/home/flow.png"
         imgWidth='600px'
         imgHeight='333px'
         direction="right"
       >
         <p>
-          Programming is not easy, but the hardest part is not the programming language itself, its the program structure organizing. We build a high level logic-abstraction to hide the structure and let developer focused on logic only.
+          <Translate>Programming is not easy, but the hardest part is not the programming language itself, its the program structure organizing. We build a high level logic-abstraction to hide the structure and let developer focused on logic only.</Translate>
         </p>
-        <p>Most visual graph editting is just a visual wrapper of the original codes. We build a graph interaction which is as simple as Houdini and as powerful as any turning completed programming language.
+        <p><Translate>Most visual graph editting is just a visual wrapper of the original codes. We build a graph interaction which is as simple as Houdini and as powerful as any turning completed programming language.</Translate>
         </p>
       </FeatureSectionImage>
 
       <FeatureSection
-        title="An agent VM, platform and simulator"
+        title=<Translate>An agent VM, platform and simulator</Translate>
         btnLink="https://realityworld.com"
-        btnText="Read More"
+        btnText={more}
         image={Platform}
         direction="left"
       >
         <p>
-          We defined a standard agent format to represent a turing completed agent program which can be loaded and runned dynamically so everyone can develop an agent to handle personal needs.
+          <Translate>We defined a agent format standard to represent a turing completed agent program which can be loaded and runned dynamically so everyone can develop an agent to handle personal needs.</Translate>
 
         </p>
         <p>
-          We then build a platform with a virtual machine to interpret and execute the above agent format program dynamically. By this dynamical capability, developer can create and share agent with users as simple as share a url.
+          <Translate>We then build a platform with a virtual machine to interpret and execute the above agent format program dynamically. By this dynamical capability, developer can create and share agent with users as simple as share a url.</Translate>
 
         </p>
       </FeatureSection>
 
       <FeatureSection
-        title="Multi-agent conversational collaborating framework"
+        title=<Translate>Multi-agent conversational collaborating framework</Translate>
         btnLink="https://realityworld.com"
         imgWidth='600px'
         imgHeight='auto'
-        btnText="Read More"
+        btnText={more}
         image={Conversational}
         direction="right"
       >
         <p>
-          Agents can commnuicating with user, system and other agents in a very simple way which provides the ability to finish a task in a collaberating way.
+          <Translate>Agents can commnuicating with user, system and other agents in a very simple way which provides the ability to finish a task in a collaberating way.</Translate>
 
         </p>
         <p>
-          In a LLM-powered application, the inputs of a function is semantic instead of structured data, which brings uncertainty and needs conversational way to get more information. For solve this problem, we propose a new concept and a novel architecture called "Conversational computing" for the first time in the world, to make any function can be paused and conversational commnuicating with user, system and other agents to get full information it needs without extra works.
+          <Translate>In a LLM-powered application, the inputs of a function is semantic instead of structured data, which brings uncertainty and needs conversational way to get more information. For solve this problem, we propose a new concept and a novel architecture called "Conversational computing" for the first time in the world, to make any function can be paused and conversational commnuicating with user, system and other agents to get full information it needs without extra works.</Translate>
 
         </p>
       </FeatureSection>
 
       <FeatureSectionImage
-        title="An engine of complexity to emerge intelligence"
+        title=<Translate>An engine of complexity to emerge intelligence</Translate>
         btnLink="https://realityworld.com"
-        btnText="Read More"
+        btnText={more}
         imgWidth='600px'
         imgHeight='auto'
         image="/img/home/complex.jpg"
         direction="left"
       >
         <p>
-          In biology or social economic syetm, many agreements have come to that the intelligence of the system come from the emergence mechanism of the complex system theory.
+          <Translate>In biology or social economic syetm, many agreements have come to that the intelligence of the system come from the emergence mechanism of the complex system theory.</Translate>
 
         </p>
         <p>
-          In computer science and engineering, applications are isolated each other for data security and some other business reasons. The lack of interoperability make the applications non-cooperative and hence none-intelligent. We re-organized the structure and execution of software contruction process to provide a interopability-native architecture to form an engine of complexity.
+          <Translate>In computer science and engineering, applications are isolated each other for data security and some other business reasons. The lack of interoperability make the applications non-cooperative and hence none-intelligent. We re-organized the structure and execution of software contruction process to provide a interopability-native architecture to form an engine of complexity.</Translate>
         </p>
       </FeatureSectionImage>
 

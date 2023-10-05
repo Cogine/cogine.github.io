@@ -8,19 +8,19 @@
     "description": "The alt text of navbar logo"
   },
   "item.label.Products": {
-    "message": "Products",
+    "message": "产品",
     "description": "Navbar item with label Products"
   },
   "item.label.Developers": {
-    "message": "Developers",
+    "message": "开发者",
     "description": "Navbar item with label Developers"
   },
   "item.label.Blog": {
-    "message": "Blog",
+    "message": "博客",
     "description": "Navbar item with label Blog"
   },
   "item.label.Community": {
-    "message": "Community",
+    "message": "社区",
     "description": "Navbar item with label Community"
   },
   "item.label.Cogine": {
@@ -36,31 +36,31 @@
     "description": "Navbar item with label Reality World"
   },
   "item.label.Whitepaper": {
-    "message": "Whitepaper",
+    "message": "白皮书",
     "description": "Navbar item with label Whitepaper"
   },
   "item.label.Documentation": {
-    "message": "Documentation",
+    "message": "技术文档",
     "description": "Navbar item with label Documentation"
   },
   "item.label.Thinking": {
-    "message": "Thinking",
+    "message": "思考过程",
     "description": "Navbar item with label Thinking"
   },
   "item.label.About open source": {
-    "message": "About open source",
+    "message": "关于开源",
     "description": "Navbar item with label About open source"
   },
   "item.label.About Reality World": {
-    "message": "About Reality World",
+    "message": "关于 Reality World",
     "description": "Navbar item with label About Reality World"
   },
   "item.label.Contact": {
-    "message": "Contact",
+    "message": "联系",
     "description": "Navbar item with label Contact"
   },
   "item.label.Questions": {
-    "message": "Questions",
+    "message": "常见问题",
     "description": "Navbar item with label Questions"
   }
 }

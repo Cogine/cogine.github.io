@@ -79,7 +79,7 @@ module.exports = {
           type: 'dropdown',
           items: [
             { to: '/whitepaper', label: 'Whitepaper' },
-            { to: '/docs', label: 'Documentation' },
+            { to: '/docs/intro', label: 'Documentation' },
             { to: '/thinking', label: 'Thinking' },
           ],
         },
@@ -137,7 +137,7 @@ module.exports = {
             },
             {
               label: 'Questions',
-              href: '/questions',
+              href: '/community/questions',
             },
           ],
         },
@@ -145,16 +145,11 @@ module.exports = {
           title: 'Social',
           items: [
             {
-              label: 'Wechat',
-              href: '/wechat',
-            },
-            {
-              label: 'Zhihu',
-              href: 'https://realityworld.com',
-            },
-            {
-              label: 'Bilibili',
-              href: 'https://realityworld.com',
+              html: `
+              <span>Wechat 开源社区群:</span><br/>
+              <img src="/img/home/wechat.jpg" alt="Reality World开源社区群" width="150" height="150" />
+              <br/><span>过期请加：ARealityWorld</span>
+          `,
             },
           ],
         },
@@ -168,7 +163,6 @@ module.exports = {
             {
               label: 'License',
               href: '/',
-              target: '_blank',
             },
           ],
         },
@@ -177,11 +171,11 @@ module.exports = {
           items: [
             {
               label: 'Reality World',
-              href: '/careers',
+              href: '/commnuity/about-reality-world',
             },
             {
-              label: 'Team',
-              href: '/team',
+              label: 'Contact',
+              href: '/community/contact',
             },
           ],
         },

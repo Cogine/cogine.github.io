@@ -3,11 +3,12 @@ import Link from '@docusaurus/Link';
 
 import SectionLayout from './SectionLayout';
 
+import Translate, { translate } from '@docusaurus/Translate';
 const DeveloperCommunitySection = () => {
   return (
     <SectionLayout
-      title="Join our developer community"
-      description={`Open-source is in the ❤ of Reality World.\n⭐ us on GitHub, and join our developer security community 🗣️ on Discord!`}
+      title=<Translate>Join our developer community</Translate>
+      description={`Open-source is in the ❤ of Reality World.\n⭐ us on GitHub.`}
     >
       <div
         style={{
