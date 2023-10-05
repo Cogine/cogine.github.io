@@ -16,7 +16,7 @@ module.exports = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh'],
   },
   scripts: [],
   // stylesheets: ['styles/dark-mode.css'],
@@ -86,6 +86,10 @@ module.exports = {
         {
           to: '/blog',
           label: 'Blog',
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right'
         },
         {
           label: 'Community',
@@ -222,47 +226,6 @@ module.exports = {
         routeBasePath: 'community',
         sidebarPath: require.resolve('./sidebarsCommunity.js'),
       }),
-    ],
-    [
-      '@docusaurus/plugin-content-blog',
-      {
-        /**
-         * Required for any multi-instance plugin
-         */
-        id: 'careers',
-        /**
-         * URL route for the blog section of your site.
-         * *DO NOT* include a trailing slash.
-         */
-        routeBasePath: 'careers',
-        /**
-         * Path to data on filesystem relative to site dir.
-         */
-        path: './careers',
-        blogTitle: 'Careers',
-        blogDescription:
-          'Join us on our mission to help startups simplify the development of compliance and data security-related features in their products. Check out our open roles.',
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-blog',
-      {
-        /**
-         * Required for any multi-instance plugin
-         */
-        id: 'success-stories',
-        /**
-         * URL route for the blog section of your site.
-         * *DO NOT* include a trailing slash.
-         */
-        routeBasePath: 'success-stories',
-        /**
-         * Path to data on filesystem relative to site dir.
-         */
-        path: './success-stories',
-        blogTitle: 'Success Stories',
-        blogDescription: '',
-      },
     ],
     ['@cmfcmf/docusaurus-search-local', {}],
   ],

@@ -1,9 +1,15 @@
 ---
 slug: thinking
 title: 对未来数字世界和软件构造的思考
-authors: [chunlin]
+
+author: Chunlin Qin
+author_title: Creator of Reality World
+author_url: https://github.com/ElvisQin
+author_image_url: https://github.com/ElvisQin.png
+
 tags: [Reality World]
 hide_table_of_contents: false
+image: 'img/blog/2.jpg'
 ---
 
 

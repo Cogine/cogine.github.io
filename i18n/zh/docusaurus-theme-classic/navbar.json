@@ -1,0 +1,66 @@
+{
+  "title": {
+    "message": "Reality World",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Reality World",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Products": {
+    "message": "Products",
+    "description": "Navbar item with label Products"
+  },
+  "item.label.Developers": {
+    "message": "Developers",
+    "description": "Navbar item with label Developers"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Community": {
+    "message": "Community",
+    "description": "Navbar item with label Community"
+  },
+  "item.label.Cogine": {
+    "message": "Cogine",
+    "description": "Navbar item with label Cogine"
+  },
+  "item.label.Reality Create": {
+    "message": "Reality Create",
+    "description": "Navbar item with label Reality Create"
+  },
+  "item.label.Reality World": {
+    "message": "Reality World",
+    "description": "Navbar item with label Reality World"
+  },
+  "item.label.Whitepaper": {
+    "message": "Whitepaper",
+    "description": "Navbar item with label Whitepaper"
+  },
+  "item.label.Documentation": {
+    "message": "Documentation",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.Thinking": {
+    "message": "Thinking",
+    "description": "Navbar item with label Thinking"
+  },
+  "item.label.About open source": {
+    "message": "About open source",
+    "description": "Navbar item with label About open source"
+  },
+  "item.label.About Reality World": {
+    "message": "About Reality World",
+    "description": "Navbar item with label About Reality World"
+  },
+  "item.label.Contact": {
+    "message": "Contact",
+    "description": "Navbar item with label Contact"
+  },
+  "item.label.Questions": {
+    "message": "Questions",
+    "description": "Navbar item with label Questions"
+  }
+}

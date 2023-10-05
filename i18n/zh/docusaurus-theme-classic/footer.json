@@ -1,0 +1,62 @@
+{
+  "link.title.Cogine": {
+    "message": "Cogine",
+    "description": "The title of the footer links column with title=Cogine in the footer"
+  },
+  "link.title.Social": {
+    "message": "Social",
+    "description": "The title of the footer links column with title=Social in the footer"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.About": {
+    "message": "About",
+    "description": "The title of the footer links column with title=About in the footer"
+  },
+  "link.item.label.Introduction": {
+    "message": "Introduction",
+    "description": "The label of footer link with label=Introduction linking to /docs/introduction"
+  },
+  "link.item.label.Architecture philosophy": {
+    "message": "Architecture philosophy",
+    "description": "The label of footer link with label=Architecture philosophy linking to /philosophy"
+  },
+  "link.item.label.Questions": {
+    "message": "Questions",
+    "description": "The label of footer link with label=Questions linking to /questions"
+  },
+  "link.item.label.Wechat": {
+    "message": "Wechat",
+    "description": "The label of footer link with label=Wechat linking to /wechat"
+  },
+  "link.item.label.Zhihu": {
+    "message": "Zhihu",
+    "description": "The label of footer link with label=Zhihu linking to https://realityworld.com"
+  },
+  "link.item.label.Bilibili": {
+    "message": "Bilibili",
+    "description": "The label of footer link with label=Bilibili linking to https://realityworld.com"
+  },
+  "link.item.label.Github": {
+    "message": "Github",
+    "description": "The label of footer link with label=Github linking to https://github.com/Cogine/RealityWorld"
+  },
+  "link.item.label.License": {
+    "message": "License",
+    "description": "The label of footer link with label=License linking to /"
+  },
+  "link.item.label.Reality World": {
+    "message": "Reality World",
+    "description": "The label of footer link with label=Reality World linking to /careers"
+  },
+  "link.item.label.Team": {
+    "message": "Team",
+    "description": "The label of footer link with label=Team linking to /team"
+  },
+  "copyright": {
+    "message": "2023 © Reality World.",
+    "description": "The footer copyright"
+  }
+}

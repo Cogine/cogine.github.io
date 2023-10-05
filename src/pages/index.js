@@ -7,6 +7,8 @@ import FeatureSection from '../components/FeatureSection';
 import FeatureSectionImage from '../components/FeatureSectionImage';
 import SectionLayout from '../components/SectionLayout';
 
+import Translate, { translate } from '@docusaurus/Translate';
+
 const Collaboration = require('../../static/img/home/collaberation.svg').default;
 const Platform = require('../../static/img/home/platform.svg').default;
 const Conversational = require('../../static/img/home/conversational.svg').default;
@@ -23,7 +25,7 @@ const IndexPage = () => {
         image="/img/home-hero.svg"
         buttons={[
           {
-            title: 'Whitepaper',
+            title: <Translate>Whitepaper</Translate>,
             href: 'https://realityworld.com/docs',
             className: 'button--primary',
           },
@@ -41,7 +43,7 @@ const IndexPage = () => {
         title="Let everyone can write AI agent"
         btnLink="https://realityworld.com"
         btnText="Read More"
-        image='/img/home/flow.png'
+        image="/img/home/flow.png"
         imgWidth='600px'
         imgHeight='333px'
         direction="right"
@@ -54,7 +56,7 @@ const IndexPage = () => {
       </FeatureSectionImage>
 
       <FeatureSection
-        title="An agent platform & VM"
+        title="An agent VM, platform and simulator"
         btnLink="https://realityworld.com"
         btnText="Read More"
         image={Platform}
@@ -95,7 +97,7 @@ const IndexPage = () => {
         btnText="Read More"
         imgWidth='600px'
         imgHeight='auto'
-        image='/img/home/complex.jpg'
+        image="/img/home/complex.jpg"
         direction="left"
       >
         <p>
