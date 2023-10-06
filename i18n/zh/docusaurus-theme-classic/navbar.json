@@ -62,5 +62,17 @@
   "item.label.Questions": {
     "message": "常见问题",
     "description": "Navbar item with label Questions"
+  },
+  "item.label.Features & Comparison": {
+    "message": "特性 & 比较",
+    "description": "Navbar item with label Features & Comparison"
+  },
+  "item.label.Self-deploying": {
+    "message": "自我部署",
+    "description": "Navbar item with label Self-deploying"
+  },
+  "item.label.Roadmap": {
+    "message": "路线图",
+    "description": "Navbar item with label Roadmap"
   }
 }

@@ -72,6 +72,10 @@ module.exports = {
               to: '/app',
               label: 'Reality World',
             },
+            {
+              to: '/self-deploying',
+              label: 'Self-deploying',
+            },
           ],
         },
         {
@@ -86,6 +90,10 @@ module.exports = {
         {
           to: '/blog',
           label: 'Blog',
+        },
+        {
+          to: '/features',
+          label: 'Features & Comparison',
         },
         {
           type: 'localeDropdown',
@@ -103,6 +111,10 @@ module.exports = {
             {
               to: '/community/about-reality-world',
               label: 'About Reality World',
+            },
+            {
+              to: '/community/roadmap',
+              label: 'Roadmap',
             },
             {
               to: '/community/contact',

@@ -25,7 +25,7 @@
   },
   "link.item.label.Questions": {
     "message": "Questions",
-    "description": "The label of footer link with label=Questions linking to /questions"
+    "description": "The label of footer link with label=Questions linking to /community/questions"
   },
   "link.item.label.Wechat": {
     "message": "Wechat",
@@ -49,7 +49,7 @@
   },
   "link.item.label.Reality World": {
     "message": "Reality World",
-    "description": "The label of footer link with label=Reality World linking to /careers"
+    "description": "The label of footer link with label=Reality World linking to /commnuity/about-reality-world"
   },
   "link.item.label.Team": {
     "message": "Team",
@@ -58,5 +58,9 @@
   "copyright": {
     "message": "2023 © Reality World.",
     "description": "The footer copyright"
+  },
+  "link.item.label.Contact": {
+    "message": "Contact",
+    "description": "The label of footer link with label=Contact linking to /community/contact"
   }
 }

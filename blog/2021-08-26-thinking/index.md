@@ -9,7 +9,7 @@ author_image_url: https://github.com/ElvisQin.png
 
 tags: [Reality World]
 hide_table_of_contents: false
-image: 'img/blog/2.jpg'
+image: '/img/blog/2.jpg'
 ---
 
 

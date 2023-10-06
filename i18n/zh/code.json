@@ -367,5 +367,35 @@
   },
   "Join our developer community": {
     "message": "加入开发者社区"
+  },
+  "Cogine is the virtual machine and base framework of Reality World, it defined a standard agent(a micro-program) format, and it can load and run multi-agent dynamically with the ability to interoperate and communicate with each other.": {
+    "message": "Cogine是Reality World的虚拟机和底层框架, 它定义了一套标准的微程序（例如一个LLM智能体）格式，这些微程序可以被动态的加载和运行， 微程序之间可以以很简单统一的方式进行通信。"
+  },
+  "The term Cogine stands for An engine of complexity, or an cognitive computing engine, or conversational computing engine.": {
+    "message": "Cogine一词来源于几个相关的意思：An engine of complexity， 或者an cognitive computing engine, 或者 conversational computing engine。"
+  },
+  "And you can deploy it yourself within your own application.": {
+    "message": "你也可以将Cogine部署集成到自己的应用中。"
+  },
+  "Reality World is an app which can load and run any agent defined by the Cogine agent format, it's also a simulator you can used to debug your agent program.": {
+    "message": "Reality World是一个可以加载和运行遵循Cogine定义的Agent格式的应用， 它也是一个模拟器，开发者可以使用它调试Agent程序。"
+  },
+  "User who installed the Reality World app can create and share agent each other. It makes Reality World a agent platform.": {
+    "message": "任何安装Reality World 应用的用户之间都可以很方便地创建和分享Agent程序，这使得它成为一个Agent开发和部署的平台。"
+  },
+  "Reality Create is a graph-based editor, it can create and define an agent program which will can be running in Reality World app or by the Cogine virtual machine": {
+    "message": "Reality Create是一个基于图的编辑器，使用它可以创建由Cogine定义的程序，这些程序可以被Reality World加载或者Cogine虚拟机加载运行。"
+  },
+  "Features and benefits": {
+    "message": "特性 和 好处"
+  },
+  "The following we list the main features of Cogine, for the details please check the technical documentation.": {
+    "message": "以下是Cogine的一些主要特性，更详细的介绍参见技术文档"
+  },
+  "Development comparison with LangChain and Chidori": {
+    "message": "与 LangChain 和 Chidori 在开发体验上的比较"
+  },
+  "Basically, in other framework, you have to learn Python language, have to care about the structure of the program and have to learn many architecture design (such as different specific class and its inheritance relationships. In Cogine, the only thing you are care about is your logic, no other programming burden.": {
+    "message": "基本上，在使用其它框架的时候，用户必须要全面学习Python，关注程序的结构，以及这些框架本身定义的各种复杂的类及其复杂的继承关系，然后使用这些特定的架构规则构建程序。 使用Cogine，你唯一需要关心的就是逻辑本身， 没有太多软件构造方面的负担。"
   }
 }
