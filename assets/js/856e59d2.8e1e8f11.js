@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrealityworld=self.webpackChunkrealityworld||[]).push([[8477],{5744:l=>{l.exports=JSON.parse('{"label":"Reality World","permalink":"/blog/tags/reality-world","allTagsPath":"/blog/tags","count":3}')}}]);

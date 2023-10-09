@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrealityworld=self.webpackChunkrealityworld||[]).push([[1713],{3457:e=>{e.exports=JSON.parse('[{"label":"Reality World","permalink":"/blog/tags/reality-world","count":3},{"label":"Open source","permalink":"/blog/tags/open-source","count":1},{"label":"Cogine","permalink":"/blog/tags/cogine","count":1}]')}}]);
