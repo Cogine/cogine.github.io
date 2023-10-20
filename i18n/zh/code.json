@@ -296,8 +296,8 @@
   "Read More": {
     "message": "阅读更多"
   },
-  "Rality World is a multi-agent platform built with interoperability as its core, in which a dynamic agent or program can be added and interoperated with all other agents. It's like a complex system and emerges digital intelligence.": {
-    "message": "Rality World是一个多程序（如多智能体）动态运行的平台和模拟器， 它的核心是解决这些来自不同开发者的程序之间的互操作、安全和调度。它像复杂系统一样工作，用户可以选择不同的程序组合，使得整体程序相比传统程序能够涌现出数字智能。"
+  "Reality World is a multi-agent platform built with interoperability as its core, in which a dynamic agent or program can be added and interoperated with all other agents. It's like a complex system and emerges digital intelligence.": {
+    "message": "Reality World是一个多程序（如多智能体）动态运行的平台和模拟器， 它的核心是解决这些来自不同开发者的程序之间的互操作、安全和调度。它像复杂系统一样工作，用户可以选择不同的程序组合，使得整体程序相比传统程序能够涌现出数字智能。"
   },
   "Get Started": {
     "message": "开始入门"

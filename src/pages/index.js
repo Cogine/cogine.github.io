@@ -22,7 +22,7 @@ const IndexPage = () => {
     <Layout title={title} description={description}>
       <HeroSection
         title="Creating an intelligent reality with AI"
-        description=<Translate>Rality World is a multi-agent platform built with interoperability as its core, in which a dynamic agent or program can be added and interoperated with all other agents. It's like a complex system and emerges digital intelligence.</Translate>
+        description=<Translate>Reality World is a multi-agent platform built with interoperability as its core, in which a dynamic agent or program can be added and interoperated with all other agents. It's like a complex system and emerges digital intelligence.</Translate>
         image="/img/home-hero.svg"
         buttons={[
           {
