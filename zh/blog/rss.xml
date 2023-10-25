@@ -4,11 +4,19 @@
         <title>Creating an intelligent reality with AI Blog</title>
         <link>https://realityworld.com/zh/blog</link>
         <description>Creating an intelligent reality with AI Blog</description>
-        <lastBuildDate>Mon, 09 Oct 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Oct 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh</language>
         <copyright>2023 © Reality World.</copyright>
+        <item>
+            <title><![CDATA[The Evolution of ECS]]></title>
+            <link>https://realityworld.com/zh/blog/the-evolution-of-ECS</link>
+            <guid>https://realityworld.com/zh/blog/the-evolution-of-ECS</guid>
+            <pubDate>Tue, 10 Oct 2023 00:00:00 GMT</pubDate>
+            <category>Reality World</category>
+            <category>Cogine</category>
+        </item>
         <item>
             <title><![CDATA[Reality World 开源技术分享会]]></title>
             <link>https://realityworld.com/zh/blog/reality-world-open-source-conference</link>

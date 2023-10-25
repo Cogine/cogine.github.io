@@ -2,12 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://realityworld.com/blog</id>
     <title>Creating an intelligent reality with AI Blog</title>
-    <updated>2023-10-09T00:00:00.000Z</updated>
+    <updated>2023-10-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://realityworld.com/blog"/>
     <subtitle>Creating an intelligent reality with AI Blog</subtitle>
     <icon>https://realityworld.com/img/logo/reality-world.svg</icon>
     <rights>2023 © Reality World.</rights>
+    <entry>
+        <title type="html"><![CDATA[The Evolution of ECS]]></title>
+        <id>https://realityworld.com/blog/the-evolution-of-ECS</id>
+        <link href="https://realityworld.com/blog/the-evolution-of-ECS"/>
+        <updated>2023-10-10T00:00:00.000Z</updated>
+        <author>
+            <name>Chunlin Qin</name>
+            <uri>https://github.com/ElvisQin</uri>
+        </author>
+        <category label="Reality World" term="Reality World"/>
+        <category label="Cogine" term="Cogine"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Reality World 开源技术分享会]]></title>
         <id>https://realityworld.com/blog/reality-world-open-source-conference</id>
