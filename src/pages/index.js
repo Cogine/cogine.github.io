@@ -5,7 +5,7 @@ import CustomersSection from '../components/CustomersSection';
 import DeveloperCommunitySection from '../components/DeveloperCommunitySection';
 import FeatureSection from '../components/FeatureSection';
 import FeatureSectionImage from '../components/FeatureSectionImage';
-import SectionLayout from '../components/SectionLayout';
+import VideoContainer from '../components/VideoContainer';
 
 import Translate, { translate } from '@docusaurus/Translate';
 
@@ -21,7 +21,7 @@ const IndexPage = () => {
   return (
     <Layout title={title} description={description}>
       <HeroSection
-        title="Creating an intelligent reality with AI"
+        title="Creating an intelligent reality with Cogine"
         description=<Translate>Reality World is a multi-agent platform built with interoperability as its core, in which a dynamic agent or program can be added and interoperated with all other agents. It's like a complex system and emerges digital intelligence.</Translate>
         image="/img/home-hero.svg"
         buttons={[
@@ -37,6 +37,8 @@ const IndexPage = () => {
           },
         ]}
       />
+
+      <VideoContainer />
 
       <CustomersSection />
 
