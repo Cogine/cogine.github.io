@@ -27,7 +27,7 @@ const IndexPage = () => {
         buttons={[
           {
             title: <Translate>Whitepaper</Translate>,
-            href: 'https://realityworld.com/docs',
+            href: 'https://realityworld.com/zh/whitepaper',
             className: 'button--primary',
           },
           {
