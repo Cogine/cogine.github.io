@@ -84,7 +84,7 @@ module.exports = {
           items: [
             { to: '/whitepaper', label: 'Whitepaper' },
             { to: '/docs/intro', label: 'Documentation' },
-            { to: '/thinking', label: 'Thinking' },
+            { to: '/learning/Reality-World', label: 'Learning' },
           ],
         },
         {
@@ -223,16 +223,18 @@ module.exports = {
     ],
   ],
   plugins: [
-    [
-      'content-docs',
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      ({
-        id: 'community',
-        path: 'community',
-        routeBasePath: 'community',
-        sidebarPath: require.resolve('./sidebarsCommunity.js'),
-      }),
-    ],
+
+    //[
+    //  'content-docs',
+    //  /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    //  ({
+    //    id: 'learning',
+    //    path: 'learning',
+    //    routeBasePath: 'learning',
+    //    sidebarPath: require.resolve('./sidebarsLearning.js'),
+    //  }),
+    //],
+
     ['@cmfcmf/docusaurus-search-local', {}],
   ],
 };
